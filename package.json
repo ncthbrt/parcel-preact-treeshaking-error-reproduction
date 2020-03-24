@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "typecheck": "tsc --noEmit",
-    "dev": "parcel --port 80 --hmr-port 5010 ./src/index.html",
+    "dev": "parcel --port 9001 --hmr-port 5010 ./src/index.html",
     "build": "parcel build ./src/index.html --experimental-scope-hoisting",
     "parcel": "parcel",
     "tsc": "tsc"
