@@ -1,0 +1,32 @@
+{
+  "name": "parcel-preact",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "dev": "parcel --port 80 --hmr-port 5010 ./src/index.html",
+    "build": "parcel build ./src/index.html --experimental-scope-hoisting",
+    "parcel": "parcel",
+    "tsc": "tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/react": "^16.9.25",
+    "@types/react-dom": "^16.9.5",
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-bundle-visualiser": "^1.2.0",
+    "parcel-plugin-compress": "^1.1.0",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "preact": "^10.3.4",
+    "ts-polyfill": "^3.8.2"
+  },
+  "alias": {
+    "react": "preact/compat",
+    "react-dom/test-utils": "preact/test-utils",
+    "react-dom": "preact/compat"
+  }
+}
